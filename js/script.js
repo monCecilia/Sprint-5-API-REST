@@ -15,15 +15,15 @@ async function getJoke(){
 
 
 
-const apiWeather = 'https://www.el-tiempo.net/api/json/v2/provincias/08/municipios/08019';
+const apiWeather = 'https://api.weatherapi.com/v1/current.json?key=8c9873737bea4e949fb201622210605&q=Barcelona&aqi=no';
 async function getWeather(){
     const responseWeather = await fetch(apiWeather);
     const dataWeather = await responseWeather.json();
     const description = document.getElementById('descriptionId');
     const temp = document.getElementById('tempId');
 
-    description.textContent =`${dataWeather.stateSky.description}`;
-    temp.textContent = `${dataWeather.temperatura_actual} "º"`;
+    description.textContent =`${dataWeather.current.condition.text}`;
+    temp.textContent = `${dataWeather.current.temp_c} º`;
 }
 getWeather();
 

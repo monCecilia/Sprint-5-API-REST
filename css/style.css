@@ -4,9 +4,13 @@
 
 .container-fluid {
   height:90vh;
-  background-image: url(/img/bg-draw.jpg);
+  background-image: url(/img/bg-draw.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
+}
+.jumbotron{
+  min-width: 350px;
+  max-width: 600px;
 }
 
