@@ -1,4 +1,5 @@
 # Sprint-5-API-REST
+![alt text](https://github.com/monCecilia/readme-img/blob/main/J%26W-Web.png)
 ## Description
 
 ### Level 1
