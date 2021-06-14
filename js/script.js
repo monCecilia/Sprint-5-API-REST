@@ -23,7 +23,11 @@ async function getWeather(){
     const temp = document.getElementById('tempId');
 
     description.textContent =`${dataWeather.current.condition.text}`;
+<<<<<<< HEAD
     temp.textContent = `${dataWeather.current.temp_c}º`;
+=======
+    temp.textContent = `${dataWeather.current.temp_c} º`;
+>>>>>>> final
 }
 getWeather();
 
